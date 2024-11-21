@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h3>Preencha as informações do imóvel</h3>
+        <form class="form-grid">
+            <div class="form-group">
+                <label for="tipo">Tipo de imóvel</label>
+                <select name="tipo" id="tipo">
+                    <option value="VERTIC">Apartamento</option>
+                    <option value="HORIZ">Casa</option>
+                </select>
+                <label for="regiao">Região</label>
+                <input type="text" name="regiao" id="regiao">
+            </div>
+            
+            <div class="form-group">
+                <label for="construtor">Construtor</label>
+                <input type="text" name="construtor" id="construtor">
+    
+                <label for="incorporado">Incorporado</label>
+                <input type="text" name="incorporado" id="incorporado">
+            </div>
+           
+            <div class="form-group">
+                <label for="agente">Agente</label>
+                <input type="text" name="agente" id="agente">
+    
+                <label for="municipio">Distrito</label>
+                <input type="text" name="municipio" id="municipio">
+            </div>
+
+            <div class="form-group">
+                <label for="quartos">Quantidade quartos</label>
+                <input type="number" name="quartos" id="quartos">
+    
+                <label for="banheiros">Quantidade banheiros</label>
+                <input name="banheiros" id="banheiros"></input>
+            </div>
+            
+            <div class="form-group">
+                <label for="garagens">Quantidade garagens</label>
+                <input name="garagens" id="garagens"></input>
+
+                <label for="suites">Quantidade de suítes</label>
+                <input name="suites" id="suites"></input>
+            </div>
+            
+            <div class="form-group">
+                <label for="areaTotalPorUnidade">Área total por unidade</label>
+                <input name="areaTotalPorUnidade" id="areaTotalPorUnidade"></input>
+
+                <label for="areaUtilPorUnidade">Área útil por unidade</label>
+                <input name="areaUtilPorUnidade" id="areaUtilPorUnidade"></input>
+            </div>
+           
+            <div class="form-button">
+                <label for="andares">Quantidade de andares</label>
+                <input name="andares" id="andares"></input>
+
+                <button type="submit">Buscar preço</button>
+            </div>
+            
+        </form>
+        <h3 id="preco" style="display: none;"></h3>
+    </section>
+    
+</body>
+<script src="index.js"></script>
+</html>
